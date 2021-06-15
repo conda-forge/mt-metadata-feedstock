@@ -1,5 +1,5 @@
 {% set name = "mt-metadata" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mt_metadata-{{ version }}.tar.gz
-  sha256: 7ebaf3382d9b740f8932e3b3d19b28ad5178c9fcc378497f7473181aeabf98b5
+  sha256: ef5f9c121994ecb3cb3240eea1176ef14b4343309ca78398a098cdfe1a9263ae
 
 build:
   number: 0
