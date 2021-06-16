@@ -21,11 +21,14 @@ requirements:
     - pytest-runner
     - python >=3.5
   run:
+    - concurrentloghandler
+    - matplotlib
     - numpy
     - obspy
     - pandas
     - python >=3.5
     - pyyaml
+    - scipy
 
 test:
   imports:
