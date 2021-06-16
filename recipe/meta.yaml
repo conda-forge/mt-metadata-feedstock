@@ -21,7 +21,7 @@ requirements:
     - pytest-runner
     - python >=3.5
   run:
-    - concurrentloghandler
+    - concurrent-log-handler
     - matplotlib
     - numpy
     - obspy
