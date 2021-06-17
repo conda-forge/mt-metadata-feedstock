@@ -21,6 +21,7 @@ requirements:
     - pytest-runner
     - python >=3.5
   run:
+    - concurrent-log-handler
     - numpy
     - obspy
     - pandas
