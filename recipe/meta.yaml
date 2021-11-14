@@ -26,6 +26,9 @@ requirements:
     - pandas
     - python >=3.5
     - pyyaml
+    - matplotlib-base
+    - xarray
+    - concurrent-log-handler
 
 test:
   imports:
