@@ -1,5 +1,5 @@
 {% set name = "mt-metadata" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mt_metadata-{{ version }}.tar.gz
-  sha256: 5186a74324585f7e607a1fe146c7bd02e2e520100458d591edaf13bfbc849aef
+  sha256: cf8384c68a8c4329b7544d3d28a5382a1aad3cd1d07e5842d82c42f82d007c58
 
 build:
   number: 0
@@ -21,20 +21,19 @@ requirements:
     - pytest-runner
     - python >=3.5
   run:
-    - numpy
+    - concurrent-log-handler
+    - matplotlib-base
+    - numpy <=1.21
     - obspy
     - pandas
     - python >=3.5
     - pyyaml
-    - matplotlib-base
     - xarray
-    - concurrent-log-handler
 
 test:
   imports:
     - mt_metadata
     - mt_metadata.base
-    - mt_metadata.timeseries
   commands:
     - pip check
   requires:
@@ -44,11 +43,8 @@ about:
   home: https://github.com/kujaku11/mt_metadata
   summary: Metadata for magnetotelluric data
   license: MIT
-  license_family: MIT
   license_file: LICENSE
 
 extra:
   recipe-maintainers:
-    - lheagy
-    - kujaku11
-    - kkappler
+    - jp
