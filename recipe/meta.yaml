@@ -43,11 +43,6 @@ about:
   license: MIT
   license_file:
     - LICENSE
-    - .eggs/pytest_runner-6.0.0-py3.8.egg/EGG-INFO/LICENSE
-    - mt_metadata/timeseries/copyright.py
-    - mt_metadata/timeseries/standards/copyright.json
-    - mt_metadata/transfer_functions/io/emtfxml/metadata/copyright.py
-    - mt_metadata/transfer_functions/io/emtfxml/metadata/standards/copyright.json
 
 extra:
   recipe-maintainers:
