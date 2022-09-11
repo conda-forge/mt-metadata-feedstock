@@ -40,7 +40,7 @@ test:
 about:
   home: https://github.com/kujaku11/mt_metadata
   summary: Metadata for magnetotelluric data
-  license: Unlicense & MIT
+  license: MIT
   license_file:
     - LICENSE
     - .eggs/pytest_runner-6.0.0-py3.8.egg/EGG-INFO/LICENSE
