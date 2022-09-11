@@ -3,7 +3,7 @@ About mt-metadata
 
 Home: https://github.com/kujaku11/mt_metadata
 
-Package license: MIT
+Package license: Unlicense & MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mt-metadata-feedstock/blob/main/LICENSE.txt)
 
