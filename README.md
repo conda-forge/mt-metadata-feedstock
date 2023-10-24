@@ -1,11 +1,11 @@
-About mt-metadata
-=================
+About mt-metadata-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mt-metadata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/kujaku11/mt_metadata
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mt-metadata-feedstock/blob/main/LICENSE.txt)
 
 Summary: Metadata for magnetotelluric data
 
