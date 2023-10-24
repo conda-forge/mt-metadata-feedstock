@@ -21,19 +21,18 @@ requirements:
     - pytest-runner
     - python >=3.5
   run:
-    - concurrent-log-handler
-    - matplotlib-base
-    - numpy <=1.21
-    - obspy
-    - pandas
-    - python >=3.5
+    - python >=3.7
+    - numpy
+    - pandas <=1.5.3
     - pyyaml
+    - obspy
+    - matplotlib-base
     - xarray
+    - loguru
 
 test:
   imports:
     - mt_metadata
-    - mt_metadata.base
   commands:
     - pip check
   requires:
