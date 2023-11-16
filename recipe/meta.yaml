@@ -19,11 +19,11 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.5
+    - python >=3.7
   run:
     - python >=3.7
     - numpy
-    - pandas <=1.5.3
+    - pandas
     - pyyaml
     - obspy
     - matplotlib-base
