@@ -1,5 +1,5 @@
 {% set name = "mt-metadata" %}
-{% set version = "0.4.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mt_metadata-{{ version }}.tar.gz
-  sha256: 7072749ab13399faaf6536c065f6c5d2d348199c43168a08b0cf249468d4fc7e
+  sha256: 39fe1d11a9f64be2ce8940a94559853cb630636ea0da8a2c6aa14c1679ed3560
 
 build:
   number: 0
@@ -19,9 +19,9 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.7
+    - python >=3.10
   run:
-    - python >=3.7
+    - python >=3.10
     - numpy
     - pandas
     - pyyaml
@@ -29,6 +29,9 @@ requirements:
     - matplotlib-base
     - xarray
     - loguru
+    - pydantic
+    - pyproj
+    - typing-extensions
 
 test:
   imports:
