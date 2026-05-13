@@ -1,5 +1,6 @@
 {% set name = "mt-metadata" %}
 {% set version = "1.0.9" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -11,7 +12,7 @@ source:
   sha256: e51b11f8b569779fe56b1b140da1ff0a63a4d843944b3212bb0d1a72d341f7aa
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +24,7 @@ requirements:
     - wheel
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - pandas
     - pyyaml
@@ -43,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/kujaku11/mt_metadata
