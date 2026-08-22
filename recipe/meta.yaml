@@ -1,5 +1,5 @@
 {% set name = "mt-metadata" %}
-{% set version = "1.0.9" %}
+{% set version = "1.0.10" %}
 {% set python_min = "3.10" %}
 
 
@@ -8,11 +8,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mt_metadata-{{ version }}.tar.gz
-  sha256: e51b11f8b569779fe56b1b140da1ff0a63a4d843944b3212bb0d1a72d341f7aa
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mt_metadata-{{ version }}.tar.gz
+  sha256: eb3ecb5c8a6f1d824e47f210068d240b7eab79fc58a4bb41efe7a4af5c2f76e6
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
